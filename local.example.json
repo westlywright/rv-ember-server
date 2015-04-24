@@ -1,0 +1,11 @@
+{
+    "port" : 4000,
+    "cookie": "secret",
+    "ApiVersion": "",
+    "ApiDomain": "",
+    "secret": "",
+    "apiKey": "",
+    "publicDir": "./dist"
+    "cacheTimeout": 2592000000,
+    "cachePrivacy": 'private'
+}

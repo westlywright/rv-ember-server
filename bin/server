@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+'use strict';
+
+var server = require('./../index');
+
+server.start(function () {
+    console.log('Server running at:', server.info.uri);
+});
+
+
