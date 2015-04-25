@@ -9,7 +9,10 @@
   "bin" : {
     "rv-serve" : "bin/server"
   },
-  "author": "Westly Wright",
+  "author": {
+    "name" : "Westly Wright",
+    "email" : "westly.wright@gmail.com"
+  },
   "repository" : {
     "type" : "git",
     "url" : "https://github.com/westlywright/rv-ember-server.git"
