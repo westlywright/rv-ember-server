@@ -10,8 +10,7 @@
     "rv-serve" : "bin/server"
   },
   "author": {
-    "name" : "Westly Wright",
-    "email" : "westly.wright@gmail.com"
+    "name" : "Westly Wright"
   },
   "repository" : {
     "type" : "git",
