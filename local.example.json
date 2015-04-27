@@ -5,7 +5,7 @@
     "ApiDomain": "",
     "secret": "",
     "apiKey": "",
-    "publicDir": "./dist"
+    "publicDir": "./dist",
     "cacheTimeout": 2592000000,
-    "cachePrivacy": 'private'
+    "cachePrivacy": "private"
 }
