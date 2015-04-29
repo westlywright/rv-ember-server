@@ -1,6 +1,7 @@
 'use strict';
 
 var Hapi = require('hapi');
+var Path = require('path');
 var Auth = require('./lib/auth');
 var Conf = require('./lib/conf');
 
@@ -12,6 +13,15 @@ var cacheConfig = {
 };
 
 var server = new Hapi.Server();
+
+console.log(Path.join(Conf.get('publicDir')));
+
+server.views({
+    engines: {
+        html: require('handlebars')
+    },
+    path: Path.join(Conf.get('publicDir'), 'templates')
+});
 
 server.connection({ port: Conf.get('port') });
 
@@ -28,25 +38,25 @@ server.state('apiKey', {
 });
 
 server.route({
-    path: '/{p*}',
+    path: '/assets/{p*}',
     method: 'GET',
     handler: {
         directory: {
             path: Conf.get('publicDir'),
             listing: false,
-            index: false
+            index: true,
+            redirectToSlash: false
         }
     },
     config: cacheConfig
 });
 
 server.route({
+    path: '/{p*}',
     method: 'GET',
-    path: '/',
-    handler: function (request, reply) {
-        reply.file(Conf.get('publicDir') + '/index.html').state('authToken', Auth.getAuthToken()).state('apiKey', Auth.getApiKey());
+    handler: function(request, reply){
+        reply.view('index').state('authToken', Auth.getAuthToken()).state('apiKey', Auth.getApiKey());
     }
 });
-
 
 module.exports = server;
