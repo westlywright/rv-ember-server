@@ -38,7 +38,7 @@ server.state('apiKey', {
 });
 
 server.route({
-    path: '/assets/{p*}',
+    path: '/public/{p*}',
     method: 'GET',
     handler: {
         directory: {
