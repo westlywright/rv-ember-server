@@ -6,18 +6,19 @@
   "scripts": {
     "test": "test"
   },
-  "bin" : {
-    "rv-serve" : "bin/server"
+  "bin": {
+    "rv-serve": "bin/server"
   },
   "author": {
-    "name" : "Westly Wright"
+    "name": "Westly Wright"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/westlywright/rv-ember-server.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/westlywright/rv-ember-server.git"
   },
   "license": "MIT",
   "dependencies": {
+    "handlebars": "^3.0.3",
     "hapi": "^8.4.0",
     "moment": "^2.10.2",
     "nconf": "^0.7.1",
