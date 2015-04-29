@@ -14,8 +14,6 @@ var cacheConfig = {
 
 var server = new Hapi.Server();
 
-console.log(Path.join(Conf.get('publicDir')));
-
 server.views({
     engines: {
         html: require('handlebars')
