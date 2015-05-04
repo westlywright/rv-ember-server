@@ -53,7 +53,10 @@ server.route({
     path: '/{p*}',
     method: 'GET',
     handler: function(request, reply){
-        reply.view('index').state('authToken', Auth.getAuthToken()).state('apiKey', Auth.getApiKey());
+        var authObj = Auth.getAuthToken();
+        var token = authObj.shaSecret;
+        var apiTimeStamp = authObj.apiTimeStamp;
+        reply.view('index').state('authToken', token).state('apiKey', Auth.getApiKey()).state('apiTimeStamp', apiTimeStamp);
     }
 });
 
