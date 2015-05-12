@@ -1,6 +1,6 @@
 {
   "name": "rv-ember-server",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Simple HapiJS Server that sits in-front of ember.",
   "main": "index.js",
   "scripts": {
