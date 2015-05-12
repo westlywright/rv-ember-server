@@ -5,6 +5,7 @@
     "ApiDomain": "",
     "secret": "",
     "apiKey": "",
+    "apiServer": "https://google.com/",
     "publicDir": "./dist",
     "cacheTimeout": 2592000000,
     "cachePrivacy": "private"
