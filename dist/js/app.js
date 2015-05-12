@@ -39,11 +39,6 @@ $.ajax({
     url: '/api/lydiatest/json/jobseekers/coverletters/1206160',
     method: 'GET',
     data: {
-        timestamp:'2015-05-12T18:49:32',
-        key:'a5a42be583e281bca02ed0a30ef4bca3f046c46d',
-        token:'75021426b67269a575358ffcdc409114c08e94b1',
-        user_auth_id:'d09f611f-ad80-11e4-b936-25f3afe0b26e',
-        user_key:'5cf07817096344eb1d53bbd62c0c35e8f653855a'
     },
     success: function(data){
         console.log(data)
@@ -58,11 +53,6 @@ $.ajax({
     url: '/api/lydiatest/json/jobseekers/coverletters/1206160',
     method: 'PUT',
     data: {
-        timestamp:'2015-05-12T18:49:32',
-        key:'a5a42be583e281bca02ed0a30ef4bca3f046c46d',
-        token:'75021426b67269a575358ffcdc409114c08e94b1',
-        user_auth_id:'d09f611f-ad80-11e4-b936-25f3afe0b26e',
-        user_key:'5cf07817096344eb1d53bbd62c0c35e8f653855a'
     },
     success: function(data){
         console.log(data)
