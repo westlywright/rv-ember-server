@@ -55,7 +55,7 @@ var mapper = function (request, callback) {
     if (request.url.search){
         search = request.url.search;
     }
-    callback(null, Conf.get('apiServer') + request.params.p + search);
+    callback(null, 'https://' + Conf.get('ApiDomain') + '/' + request.params.p + search);
 };
 
 server.route({
